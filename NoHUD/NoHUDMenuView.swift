@@ -15,6 +15,10 @@ struct NoHUDMenuView: View {
 
             Divider()
 
+            Button("Open NoHUD") {
+                model.showMainWindow()
+            }
+
             Toggle(
                 "Enable suppression",
                 isOn: Binding(

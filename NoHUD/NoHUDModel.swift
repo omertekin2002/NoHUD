@@ -20,6 +20,11 @@ final class NoHUDModel: ObservableObject {
 
     @Published var suppressionEnabled: Bool = true
 
+    /// Set by the app delegate. Used to ensure only explicit "Quit NoHUD" actions terminate the app.
+    var onQuitRequested: (@MainActor () -> Void)?
+    /// Set by the app delegate. Used to show the GUI window from the menu bar menu.
+    var onShowMainWindowRequested: (@MainActor () -> Void)?
+
     private let permissions = PermissionsManager()
     private let suppressor = MediaKeySuppressor()
     private let loginItem = LoginItemController()
@@ -74,7 +79,17 @@ final class NoHUDModel: ObservableObject {
         refreshAll()
     }
 
+    func showMainWindow() {
+        onShowMainWindowRequested?()
+    }
+
     func quit() {
+        if let onQuitRequested {
+            onQuitRequested()
+            return
+        }
+
+        // Fallback (shouldn't happen in normal app flow).
         NSApp.terminate(nil)
     }
 

@@ -6,9 +6,6 @@
 	objectVersion = 77;
 	objects = {
 
-/* Begin PBXBuildFile section */
-/* End PBXBuildFile section */
-
 /* Begin PBXFileReference section */
 		3045B1AF2E8CB81A00C34F16 /* CHANGELOG.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CHANGELOG.md; sourceTree = "<group>"; };
 		3045B1B02E8CB81A00C34F16 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -100,7 +97,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 30C937632E806B79004B5AF5 /* Build configuration list for PBXProject "volumeHUD" */;
+			buildConfigurationList = 30C937632E806B79004B5AF5 /* Build configuration list for PBXProject "NoHUD" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -349,7 +346,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		30C937632E806B79004B5AF5 /* Build configuration list for PBXProject "volumeHUD" */ = {
+		30C937632E806B79004B5AF5 /* Build configuration list for PBXProject "NoHUD" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				30C937712E806B7A004B5AF5 /* Debug */,
