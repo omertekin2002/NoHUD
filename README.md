@@ -25,6 +25,13 @@ NoHUD includes a **Start at login** toggle (via `SMAppService.mainApp`). If macO
 
 ## Build / run
 
+### Clone
+
+```bash
+git clone https://github.com/omertekin2002/NoHUD.git
+cd NoHUD
+```
+
 ### Requirements
 
 - **macOS**: 13.0+ (deployment target)
