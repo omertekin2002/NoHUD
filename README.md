@@ -57,3 +57,7 @@ Compile (CI-style, without signing):
 ```bash
 xcodebuild -project NoHUD.xcodeproj -scheme NoHUD -configuration Release -destination 'platform=macOS' build CODE_SIGNING_ALLOWED=NO CODE_SIGNING_REQUIRED=NO
 ```
+
+## Credits
+
+Shoutout to [Danny Stewart](https://github.com/dannystewart) — NoHUD’s HUD suppression approach is based on the same core method (intercepting media key events so macOS never triggers the system HUD).
