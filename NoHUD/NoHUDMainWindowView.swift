@@ -49,7 +49,7 @@ struct NoHUDMainWindowView: View {
 
             Spacer(minLength: 0)
 
-            Text("Copyright (c) 2025 Ömer Tekin")
+            Text("Copyright © Ömer Tekin")
                 .font(.caption)
                 .foregroundStyle(.secondary)
                 .frame(maxWidth: .infinity, alignment: .center)
