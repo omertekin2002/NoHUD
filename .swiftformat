@@ -38,7 +38,7 @@
 --group-blank-lines true
 --grouped-extension "MARK: %c"
 --guard-else same-line
---header \n {file}\n by Danny Stewart ({created.year})\n MIT License\n https://github.com/dannystewart/volumeHUD\n
+--header \n {file}\n by Öme Tekin ({created.year})\n MIT License\n 
 --hex-grouping 4,8
 --hex-literal-case uppercase
 --ifdef no-indent
